@@ -20,7 +20,9 @@ class SearchStaticBar extends StatelessWidget {
   String heroTag;
   ///搜索框的圆角
   double defaultBorderRadius;
+  ///外边距
   EdgeInsets margin;
+  ///内边距
   EdgeInsets padding;
   ///点击的回调事件
   Function clickCallBack;
@@ -58,7 +60,6 @@ class SearchStaticBar extends StatelessWidget {
               ///点击事件的圆角
               ///表现为水波纹的圆角
               borderRadius: BorderRadius.circular(defaultBorderRadius),
-
               ///页面过渡动画
               child: buildHeroWidget(context),
             )),
